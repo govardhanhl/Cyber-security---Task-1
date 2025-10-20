@@ -32,6 +32,22 @@ To perform a local network port scan using Nmap and identify open ports and serv
 | 445 | SMB | Vulnerable to ransomware | Disable SMB if not required |
 | 3389 | RDP | Remote login attacks | Use strong passwords or disable if unused |
 
+## ⚙️ All Nmap Commands Used
+
+Below are all the practical Nmap commands used to perform the port scanning task and related analysis.
+
+---
+
+### 🔹 1. Check Nmap Installation
+```bash
+nmap --version
+ipconfig
+nmap -sn 192.168...../24  #Discover Active Devices (Ping Scan)
+nmap -sS 192.168.56.0/24  #Basic TCP SYN Scan (Stealth Scan)
+nmap -sS 192.168.56.0/24 -oN "%userprofile%\Documents\scan_results.txt"  #Save Scan Output to a File
+
+
+
 ## Summary
 From the scan, I learned that open ports can reveal critical services to attackers. 
 Securing or closing unused ports reduces the attack surface and improves overall network security.
