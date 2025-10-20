@@ -43,10 +43,6 @@ Gained understanding of port scanning, open ports, and network reconnaissance.
 ## ⚙️ All Nmap Commands Used
 
 Below are all the practical Nmap commands used to perform the port scanning task and related analysis.
-
----
-
-### 🔹 1. Check Nmap Installation
 ```bash
 nmap --version
 ipconfig
