@@ -17,9 +17,9 @@ To perform a local network port scan using Nmap and identify open ports and serv
 6. Researched potential security risks.
 
 ## Output
-- Open ports found: 135/tcp  open  msrpc
-                    139/tcp  open  netbios-ssn
-                    445/tcp  open  microsoft-ds
+- Open ports found: 135/tcp  open  msrpc,  
+                    139/tcp  open  netbios-ssn, 
+                    445/tcp  open  microsoft-ds, 
                     7070/tcp
 - Result file: `scan_results.txt`
 
