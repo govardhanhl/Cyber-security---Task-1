@@ -11,16 +11,19 @@ To perform a local network port scan using Nmap and identify open ports and serv
 ## Steps Performed
 1. Installed Nmap.
 2. Found local IP range using `ipconfig`.
-3. Ran TCP SYN scan with `nmap -sS 192.168.1.0/24`.
+3. Ran TCP SYN scan with `nmap -sS 192.168.1.0/24`. # this is example
 4. Saved scan results to `scan_results.txt`.
 5. Identified open ports and their associated services.
 6. Researched potential security risks.
 
 ## Output
-- Open ports found: 22 (SSH), 80 (HTTP)
+- Open ports found: 135/tcp  open  msrpc
+                    139/tcp  open  netbios-ssn
+                    445/tcp  open  microsoft-ds
+                    7070/tcp
 - Result file: `scan_results.txt`
 
-## Common Services and Risks Identified
+## Common Services and Risks Identified 
 
 | Port | Service | Risk | Action |
 |------|----------|------|--------|
